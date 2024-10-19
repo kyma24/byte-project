@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Logic Gates | BYTE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="threeCSS.css">
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    </head>
+
+    <body style="background-color:#F5F6F4;">
+
+        <div class="content">
+
+            <span id="mainHeader">  
+
+                <a href="homeHTML.html" target="_self">
+                    <img id="filtered" style="width: 80px; height: 80px;" src="http://pixelartmaker.com/art/32669e722f4d7fd.png">
+                </a>
+    
+                <a class="headFont" href="homeHTML.html" target="_self"><strong>BYTE</strong></a>
+    
+                <p class="wideOnly header">
+                    <a class="headerLink" href = "oneHTML.html" target="_self">
+                        <span>COMPUTER ANATOMY</span>
+                    </a>
+                </p>
+    
+                <p class="wideOnly header">
+                    <a class="headerLink" href = "twoHTML.html" target="_self">
+                        <span>BINARY OPERATIONS</span>
+                    </a>
+                </p>
+    
+                <p class="wideOnly text header">
+                    <a class="headerLink" href = "threeHTML.html" target ="_self">
+                        <span>LOGIC GATES</span>
+                    </a>
+                </p>
+
+                <!--#E8DDB5-->
+
+            </span>
+              
+        </div>
+
+        <div class="contentZ">
+            <p>h3lL0-wOr1d.</p>
+            <img id="filtered" style="transform:translate(-25px, 0px);" src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/gates1.gif" height="250px" />
+        </div>
+        <!--<hr style="transform:translate(0px, 800px);">-->
+        <div id="myDiv" class="contentD">
+            <h2>Logic Gate Symbols</h2>
+            <p>There are two series of symbols for logic gates:</p>
+            <p>The traditional symbols have distinctive shapes making them easy to recognise so they are widely used in industry and education.</p>
+            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/and.gif"><img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/nor.gif"><img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/not.gif">
+            <p>The IEC (International Electrotechnical Commission) symbols are rectangles with a symbol inside to show the gate function. They are rarely used despite their official status, but you may need to know them for an examination.</p>
+            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/andiec.gif"><img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/noriec.gif"><img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/notiec.gif">
+            <br>
+            <h3>Inputs and Outputs</h3>
+            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/andabq.gif" align="right">
+            <p>Gates have two or more inputs, except a NOT gate which has only one input. All gates have only one output. Usually the letters A, B, C and so on are used to label inputs, and Q is used to label the output. On this page the inputs are shown on the left and the output on the right.</p>
+            <h3>The Inverting Circle (o)</h3>
+            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/nand.gif" align="right">
+            <p>Some gate symbols have a circle on their output which means that their function includes inverting of the output. It is equivalent to feeding the output through a NOT gate. For example the NAND (Not AND) gate symbol shown on the right is the same as an AND gate symbol but with the addition of an inverting circle on the output.</p>
+        </div>
+
+        <div id="myDiv" class="contentE">
+            <h2>Truth Tables</h2>
+            <table border="1" bgcolor="#E8DDB5" align="right">
+                <tbody>
+                    <tr>
+                        <th>Input A</th>
+                        <th>Input B</th>
+                        <th>Output Q</th>
+                    </tr>
+                    <tr>
+                        <td align="center">0</td>
+                        <td align="center">0</td>
+                        <td align="center">0</td>
+                    </tr>
+                    <tr>
+                        <td align="center">0</td>
+                        <td align="center">1</td>
+                        <td align="center">0</td>
+                    </tr>
+                    <tr>
+                        <td align="center">0</td>
+                        <td align="center">1</td>
+                        <td align="center">0</td>
+                    </tr>
+                    <tr>
+                        <td align="center">1</td>
+                        <td align="center">1</td>
+                        <td align="center">1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>A truth table is a good way to show the function of a logic gate. It shows the output states for every possible combination of input states. The symbols 0 (false) and 1 (true) are usually used in truth tables. The example truth table on the right shows the inputs and output of an AND gate.</p>
+            <p>There are summary truth tables below showing the output states for all types of 2-input and 3-input gates. These can be helpful if you are trying to select a suitable gate.</p>
+        </div>
+
+        <!--<hr style="transform:translate(0px, 1375px);">-->
+
+        <div id="myDiv" class="contentF">
+            <h2>NOT gate (inverter)</h2>
+            <p>The output Q is true when the input A is NOT true, the output is the inverse of the input: <b>Q = NOT A</b></p>
+            <p>A NOT gate can only have one input. A NOT gate is also called an inverter.</p>
+            <table cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/not.gif" alt="traditional NOT gate symbol" width="136" height="74">
+                        </td>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/notiec.gif" alt="IEC NOT gate symbol" width="128" height="74">
+                        </td>
+                        <td>
+                            <table border="1" bgcolor="#E8DDB5">
+                                <tbody>
+                                    <tr>
+                                        <th>Input A</th>
+                                        <th>Output Q</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Traditional Symbol</td>
+                        <td align="center">IEC Symbol</td>
+                        <td align="center">Truth Table</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="myDiv" class="contentG">
+            <h2>AND gate</h2>
+            <p>The output Q is true if input A AND input B are both true: <b>Q = A AND B</b></p>
+            <p>An AND gate can have two or more inputs, its output is true if all inputs are true.</p>
+            <table cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/and.gif" alt="traditional AND gate symbol" width="136" height="74">
+                        </td>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/andiec.gif" alt="IEC AND gate symbol" width="128" height="74">
+                        </td>
+                        <td>
+                            <table border="1" bgcolor="#E8DDB5">
+                                <tbody>
+                                    <tr>
+                                        <th>Input A</th>
+                                        <th>Input B</th>
+                                        <th>Output Q</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Traditional Symbol</td>
+                        <td align="center">IEC Symbol</td>
+                        <td align="center">Truth Table</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="myDiv" class="contentH">
+            <h2>NAND gate (NAND = <ins>N</ins>ot <ins>AND</ins>)</h2>
+            <p>This is an AND gate with the output inverted, as shown by the 'o' on the output.</p>
+            <p>The output is true if input A AND input B are NOT both true: <b>Q = NOT (A AND B)</b></p>
+            <p>A NAND gate can have two or more inputs, its output is true if NOT all inputs are true.</p>
+            <table cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/nand.gif" alt="traditional NAND gate symbol" width="136" height="74">
+                        </td>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/nandiec.gif" alt="IEC NAND gate symbol" width="128" height="74">
+                        </td>
+                        <td>
+                            <table border="1" bgcolor="#E8DDB5">
+                                <tbody>
+                                    <tr>
+                                        <th>Input A</th>
+                                        <th>Input B</th>
+                                        <th>Output Q</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Traditional Symbol</td>
+                        <td align="center">IEC Symbol</td>
+                        <td align="center">Truth Table</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="myDiv" class="contentI">
+            <h2>OR gate</h2>
+            <p>The output Q is true if input A OR input B is true (or both of them are true): <b>Q = A OR B</b></p>
+            <p>An OR gate can have two or more inputs, its output is true if at least one input is true.</p>
+            <table cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/or.gif" alt="traditional OR gate symbol" width="136" height="74">
+                        </td>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/oriec.gif" alt="IEC OR gate symbol" width="128" height="74">
+                        </td>
+                        <td>
+                            <table border="1" bgcolor="#E8DDB5">
+                                <tbody>
+                                    <tr>
+                                        <th>Input A</th>
+                                        <th>Input B</th>
+                                        <th>Output Q</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Traditional Symbol</td>
+                        <td align="center">IEC Symbol</td>
+                        <td align="center">Truth Table</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="myDiv" class="contentJ">
+            <h2>NOR gate (NOR = <ins>N</ins>ot <ins>OR</ins>)</h2>
+            <p>This is an OR gate with the output inverted, as shown by the 'o' on the output.</p>
+            <p>The output Q is true if NOT inputs A OR B are true: <b>Q = NOT (A OR B)</b></p>
+            <p>A NOR gate can have two or more inputs, its output is true if no inputs are true.</p>
+            <table cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/nor.gif" alt="traditional NOR gate symbol" width="136" height="74">
+                        </td>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/noriec.gif" alt="IEC NOR gate symbol" width="128" height="74">
+                        </td>
+                        <td>
+                            <table border="1" bgcolor="#E8DDB5">
+                                <tbody>
+                                    <tr>
+                                        <th>Input A</th>
+                                        <th>Input B</th>
+                                        <th>Output Q</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Traditional Symbol</td>
+                        <td align="center">IEC Symbol</td>
+                        <td align="center">Truth Table</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="myDiv" class="contentK">
+            <h2>EX-OR (<u>EX</u>clusive-<u>OR</u>) gate</h2>
+            <p>The output Q is true if either input A is true OR input B is true, <b>but not when both of them are true</b>:</p>
+            <p><b>Q = (A AND NOT B) OR (B AND NOT A)</b></p>
+            <p>This is like an OR gate but excluding both inputs being true.</p>
+            <p>The output is true if inputs A and B are <b>DIFFERENT</b>.</p>
+            <p>EX-OR gates can only have 2 inputs.</p>
+            <table cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/exor.gif" alt="traditional EX-OR gate symbol" width="136" height="74">
+                        </td>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/exoriec.gif" alt="IEC EX-OR gate symbol" width="128" height="74">
+                        </td>
+                        <td>
+                            <table border="1" bgcolor="#E8DDB5">
+                                <tbody>
+                                    <tr>
+                                        <th>Input A</th>
+                                        <th>Input B</th>
+                                        <th>Output Q</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Traditional Symbol</td>
+                        <td align="center">IEC Symbol</td>
+                        <td align="center">Truth Table</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="myDiv" class="contentL">
+            <h2>EX-NOR (<u>EX</u>clusive-<u>NOR</u>) gate</h2>
+            <p>This is an EX-OR gate with the output inverted, as shown by the 'o' on the output.</p>
+            <p>The output Q is true if inputs A and B are the <b>SAME</b> (both true or both false):</p>
+            <p><b>Q = (A AND B) OR (NOT A AND NOT B)</b></p>
+            <p>EX-NOR gates can only have 2 inputs.</p>
+            <table cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/exnor.gif" alt="traditional EX-NOR gate symbol" width="136" height="74">
+                        </td>
+                        <td align="center">
+                            <img src="https://dlb.sa.edu.au/rehsmoodle/file.php/466/kpsec.freeuk.com/exnoriec.gif" alt="IEC EX-NOR gate symbol" width="128" height="74">
+                        </td>
+                        <td>
+                            <table border="1" bgcolor="#E8DDB5">
+                                <tbody>
+                                    <tr>
+                                        <th>Input A</th>
+                                        <th>Input B</th>
+                                        <th>Output Q</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">0</td>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">0</td>
+                                        <td align="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                        <td align="center">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Traditional Symbol</td>
+                        <td align="center">IEC Symbol</td>
+                        <td align="center">Truth Table</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="footer">
+            <p style="font-size: 80px;">gO0dby3.</p>
+            <p style="font-size: 50px;">© キミ</p>
+            <p style="font-size: 20px;"><small>CC shift 9</small></p>
+            <nav class="navBar link">
+                <a class="navBar link" href="homeHTML.html" target="_self">Home</a>
+                <a class="navBar link" href="oneHTML.html" target="_self">Computer Anatomy</a>
+                <a class="navBar link" href="twoHTML.html" target="_self">Binary Operations</a>
+            </nav>
+        </div>
+
+        <script>
+            var isScrolling = false;
+            
+            window.addEventListener("scroll", throttleScroll, false);
+
+            function throttleScroll(e) {
+            if (isScrolling == false) {
+                window.requestAnimationFrame(function() {
+                scrolling(e);
+                isScrolling = false;
+                });
+            }
+            isScrolling = true;
+            }
+
+            document.addEventListener("DOMContentLoaded", scrolling, false);
+
+            var listItems = document.querySelectorAll("#myDiv p");
+
+            function scrolling(e) {
+
+                for (var i = 0; i < listItems.length; i++) {
+                    var listItem = listItems[i];
+
+                    if (isPartiallyVisible(listItem)) {
+                    listItem.classList.add("active");
+                    } else {
+                    listItem.classList.remove("active");
+                    }
+                }
+            }
+
+            function isPartiallyVisible(el) {
+                var elementBoundary = el.getBoundingClientRect();
+
+                var top = elementBoundary.top;
+                var bottom = elementBoundary.bottom;
+                var height = elementBoundary.height;
+
+                return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+            }
+        </script>
+    </body>
+</html>

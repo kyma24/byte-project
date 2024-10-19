@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Home | BYTE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="homeCSS.css">
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    </head>
+
+    <body>
+
+        <div class="content">
+
+            <span style="z-index: 6;" id="mainHeader">  
+
+                <a href="homeHTML.html" target="_self">
+                    <img id="filtered" style="width: 80px; height: 80px;" src="http://pixelartmaker.com/art/32669e722f4d7fd.png" alt="logo">
+                </a>
+    
+                <a class="headFont" href="homeHTML.html" target="_self"><strong>BYTE</strong></a>
+    
+                <p class="wideOnly header">
+                    <a class="header headerLink" href = "oneHTML.html" target="_self">
+                        <span>COMPUTER ANATOMY</span>
+                    </a>
+                </p>
+    
+                <p class="wideOnly header">
+                    <a class="header headerLink" href = "twoHTML.html" target="_self">
+                        <span>BINARY OPERATIONS</span>
+                    </a>
+                </p>
+    
+                <p class="wideOnly header">
+                    <a class="header headerLink" href = "threeHTML.html" target ="_self">
+                        <span>LOGIC GATES</span>
+                    </a>
+                </p>
+
+            </span>
+
+        </div>
+
+        <div class="contentS">
+            <h2>h3lL0.</h2>
+            <p>CompSci student.</p>
+        </div>
+
+        <div id="myDiv" class="contentA">
+            <p class="par">
+                <br>
+                <img class="floating" src="https://img.icons8.com/cotton/2x/computer.png" alt=""> Computer anatomy is tough to memorize, but if you study enough, the results will show on your finals test. We'll try to cover every topic that was mentioned in class in this section so you'll be guaranteed to get a solid understanding of this concept. Software or hardware, visible or invisible, every basic part of the wondrous machine "computer" will be described here.
+            </p>
+            <a class="button" href="oneHTML.html">learn more</a>
+        </div>
+
+        <div id="myDiv" class="contentB">
+            <p class="par">
+                <br>
+                <img class="cloud" src="https://www.pinclipart.com/picdir/big/165-1651957_binary-file-icon-file-table-icon-png-clipart.png" alt=""> Converting a list of ones and zeroes into regular base ten numbers can seem daunting(it is), but with enough practice and determination, it won't seem that hard anymore. We'll review the basic operations on binary numbers and share some cool tips and tricks to help you ace your computer science test! Whether it be simple addition to mind-boggling division, or even converting to a base other than base ten, it's all in here. 
+            </p>
+            <a class="button" href="twoHTML.html">learn more</a>
+        </div>
+
+        <div id="myDiv" class="contentC" style="z-index: 2;">
+            <p class="par">
+                <br>
+                <img class="floating" src="https://webstockreview.net/images/gate-clipart-logic-gate-10.png" alt=""> Deep inside the human brain, wherever you look, you can't help but to think that neurons look a whole lot like logic gates... And on an electrical circuit, you can't help but to think that transistors look like them too. Inside the computer, most functional things use logic gates. This may not seem as hard to memorize as other concepts, but it's definitely bamboozling when we put these into a circuit of their own. We'll check out the different logic gates and discuss how they are useful and how to quickly identify them.
+            </p>
+            <a class="button" href="threeHTML.html">learn more</a>
+        </div>
+        
+        <div id="bigCircle"></div>
+        <div id="mouse"></div>
+        <div id="Pentagon"></div>
+
+        <div id="footer">
+            <p style="font-size: 80px;">gO0dby3.</p>
+            <p style="font-size: 50px;">© キミ</p>
+            <nav class="navBar link">
+                <a class="navBar link" href="oneHTML.html" target="_self">Computer Anatomy</a>
+                <a class="navBar link" href="twoHTML.html" target="_self">Binary Operations</a>
+                <a class="navBar link" href="threeHTML.html" target="_self">Logic Gates</a>
+            </nav>
+        </div>
+ 
+        <script>
+            var bigCircle = document.querySelector("#bigCircle");
+            var mouse = document.querySelector("#mouse");
+            var Pentagon = document.querySelector("#Pentagon");
+        
+            function setTranslate(xPos, yPos, el) {
+                el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+            }
+        
+            window.addEventListener("DOMContentLoaded", scrollLoop, false);
+        
+            var xScrollPosition;
+            var yScrollPosition;
+        
+            function scrollLoop() {
+                xScrollPosition = window.scrollX;
+                yScrollPosition = window.scrollY;
+        
+                setTranslate(0, yScrollPosition * -0.2, bigCircle);
+                setTranslate(0, yScrollPosition * -1.8, mouse);
+                setTranslate(0, yScrollPosition * .5, Pentagon);
+        
+                requestAnimationFrame(scrollLoop);
+            }
+
+            /*animation 2*/
+
+            var isScrolling = false;
+            
+            window.addEventListener("scroll", throttleScroll, false);
+
+            function throttleScroll(e) {
+            if (isScrolling == false) {
+                window.requestAnimationFrame(function() {
+                scrolling(e);
+                isScrolling = false;
+                });
+            }
+            isScrolling = true;
+            }
+
+            document.addEventListener("DOMContentLoaded", scrolling, false);
+
+            var listItems = document.querySelectorAll("#myDiv p");
+
+            function scrolling(e) {
+
+                for (var i = 0; i < listItems.length; i++) {
+                    var listItem = listItems[i];
+
+                    if (isPartiallyVisible(listItem)) {
+                    listItem.classList.add("active");
+                    } else {
+                    listItem.classList.remove("active");
+                    }
+                }
+            }
+
+            function isPartiallyVisible(el) {
+                var elementBoundary = el.getBoundingClientRect();
+
+                var top = elementBoundary.top;
+                var bottom = elementBoundary.bottom;
+                var height = elementBoundary.height;
+
+                return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+            }
+        </script>
+    </body>
+</html>
